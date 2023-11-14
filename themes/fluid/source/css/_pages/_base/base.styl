@@ -66,3 +66,12 @@ label
 i.iconfont
   font-size 1em
   line-height 1
+
+.post-list
+  display: grid
+  grid-template-columns: 1fr 1fr
+  gap: 20px
+
+@media (max-width: 767px)
+  .post-list
+    grid-template-columns: 1fr

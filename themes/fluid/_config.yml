@@ -173,6 +173,12 @@ color:
   board_color: "#fff"
   board_color_dark: "#181c27"
 
+  # article list color in home page
+  article_list_color: "#eee"
+  article_list_color_dark: "#252d38"
+  article_list_border_color_hover: "#252d38"
+  article_list_border_color_hover_dark: "#eee"
+
   # 文章正文字体色
   # Color of post text
   post_text_color: "#2c3e50"

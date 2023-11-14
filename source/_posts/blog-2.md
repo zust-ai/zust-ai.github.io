@@ -1,6 +1,7 @@
 ---
 title: Blog 2
 author: Saquib
+index_img: https://s3-us-west-2.amazonaws.com/speedybrandimages/34b319ca-2fa2-40f5-aba3-7c5cc8539460-837b7c2d-6126-4f75-a935-5d20b788239f.png
 description: Unlock early access to the revolutionary Zust Fashion AI Platform and transform your approach to fashion. Harness the power of generative AI to create personalized designs and explore innovative collections. Join the early access program today at fashion.zust.ai.
 keywords: design innovation, fashion AI, fashion industry, generative AI, innovative technology, virtual models
 ---
