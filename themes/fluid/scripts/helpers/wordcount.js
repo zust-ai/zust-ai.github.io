@@ -6,7 +6,7 @@ const { stripHTML } = require('hexo-util');
 
 const getWordCount = (post) => {
   if (!post.wordcount) {
-    post.wordcount = stripHTML(post.content).replace(/\r?\n|\r/g, '').replace(/\s+/g, '').length;
+    post.wordcount = stripHTML(post.content).replace(/\r?\n|\r/g, '').replace(/\s+/g, ' ').split(" ").length;
   }
   return post.wordcount;
 };
@@ -21,7 +21,7 @@ const symbolsCount = (count) => {
 };
 
 hexo.extend.helper.register('min2read', (post, { awl, wpm }) => {
-  return Math.floor(getWordCount(post) / ((awl || 2) * (wpm || 60))) + 1;
+  return Math.floor(getWordCount(post) / (wpm || 60)) + 1;
 });
 
 hexo.extend.helper.register('wordcount', (post) => {

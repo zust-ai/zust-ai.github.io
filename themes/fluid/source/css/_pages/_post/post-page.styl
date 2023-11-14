@@ -3,6 +3,10 @@
   padding-left 10%
   padding-right 10%
 
+  #title
+    font-weight: bolder
+    color: var(--post-text-color)
+
 @media (max-width: 767px)
   .post-content, post-custom
     padding-left 2rem
@@ -37,7 +41,9 @@
   font-size .9rem
 
 .post-meta
-
+  display: flex
+  flex-direction: row
+  gap: 10px
   & > *:not(.hover-with-bg)
     margin-right .2rem
 

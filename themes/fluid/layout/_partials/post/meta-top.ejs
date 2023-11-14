@@ -1,18 +1,44 @@
 <% if (page.meta !== false) { %>
   <div class="mt-3">
     <% if (theme.post.meta.author && theme.post.meta.author.enable && (page.author || config.author)) { %>
-      <span class="post-meta mr-2">
-        <i class="iconfont icon-author" aria-hidden="true"></i>
-        <%- page.author || config.author %>
-      </span>
-    <% } %>
-    <% if (theme.post.meta.date.enable) { %>
-      <span class="post-meta">
-        <i class="iconfont icon-date-fill" aria-hidden="true"></i>
-        <time datetime="<%= full_date(page.date, 'YYYY-MM-DD HH:mm') %>" pubdate>
-          <%= full_date(page.date, theme.post.meta.date.format) %>
-        </time>
-      </span>
+      <div class="post-meta mr-2">
+        <% var author = config.authors.find(function (author) { return author.id === page.author }) %>
+        <% console.log(author?.name) %>
+        <img class="img-thumbnail" style="padding: 0; border-radius: 50%; height: 50px;" src="<%= url_for(author?.thumbnail || theme.post.meta.author.thumbnail || config.author_avatar) %>" class="author-avatar">
+        <div style="display: flex; flex-direction: column;">
+          <span><%- author?.name || page.author || config.author %></span>
+          <div style="display: flex;">
+            <% if (theme.post.meta.date.enable) { %>
+              <span style="font-size: 0.7em;">
+                <time datetime="<%= full_date(page.date, 'YYYY-MM-DD HH:mm') %>" pubdate>
+                  <%= full_date(page.date, theme.post.meta.date.format) %>
+                </time>
+              </span>
+            <% } %>
+            <span style="line-height: 0.7em; padding: 0 5px; position: relative; top: -2px;">.</span>
+            <% if (theme.post.meta.min2read.enable) { %>
+              <span style="font-size: 0.7em;">
+                <% var awl = parseInt(theme.post.meta.min2read.awl, 10) %>
+                <% var wpm = parseInt(theme.post.meta.min2read.wpm, 10) %>
+                <% if (theme.post.meta.min2read.format) { %>
+                  <!-- compatible with older versions-->
+                  <%- theme.post.meta.min2read.format.replace('{}', min2read(page, { awl: awl, wpm: wpm })) %>
+                <% } else { %>
+                  <%- __('post.meta.min2read', min2read(page, { awl: awl, wpm: wpm })) %>
+                <% } %>
+              </span>
+            <% } %>
+          </div>
+        </div>
+        
+        <% if(author) {%>
+          <div class="social">
+            <a href="https://twitter.com/saquiboye" target="_blank"><img src="https://img.shields.io/twitter/follow/saquiboye?style=plastic&logo=twitter" /></a>
+            <a href="https://instagram.com/saquiboye" target="_blank"><img src="https://img.shields.io/badge/-saquiboye-%23E4405F?style=flat-square&logo=Instagram&logoColor=white" /></a>
+            <a href="https://www.linkedin.com/in/saquiboye" target="_blank"><img src="https://img.shields.io/badge/-saquiboye-blue?style=flat-square&logo=Linkedin&logoColor=white" /></a>
+          </div>
+        <% } %>
+      </div>
     <% } %>
   </div>
 
@@ -25,20 +51,6 @@
           <%- theme.post.meta.wordcount.format.replace('{}', wordcount(page)) %>
         <% } else { %>
           <%- __('post.meta.wordcount', wordcount(page)) %>
-        <% } %>
-      </span>
-    <% } %>
-
-    <% if (theme.post.meta.min2read.enable) { %>
-      <span class="post-meta mr-2">
-        <i class="iconfont icon-clock-fill"></i>
-        <% var awl = parseInt(theme.post.meta.min2read.awl, 10) %>
-        <% var wpm = parseInt(theme.post.meta.min2read.wpm, 10) %>
-        <% if (theme.post.meta.min2read.format) { %>
-          <!-- compatible with older versions-->
-          <%- theme.post.meta.min2read.format.replace('{}', min2read(page, { awl: awl, wpm: wpm })) %>
-        <% } else { %>
-          <%- __('post.meta.min2read', min2read(page, { awl: awl, wpm: wpm })) %>
         <% } %>
       </span>
     <% } %>

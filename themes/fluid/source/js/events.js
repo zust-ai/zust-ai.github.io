@@ -18,17 +18,17 @@ Fluid.events = {
       navbar.removeClass('navbar-dark');
       submenu.removeClass('navbar-dark');
     }
-    Fluid.utils.listenScroll(function() {
-      navbar[navbar.offset().top > 50 ? 'addClass' : 'removeClass']('top-nav-collapse');
-      submenu[navbar.offset().top > 50 ? 'addClass' : 'removeClass']('dropdown-collapse');
-      if (navbar.offset().top > 0) {
-        navbar.removeClass('navbar-dark');
-        submenu.removeClass('navbar-dark');
-      } else {
-        navbar.addClass('navbar-dark');
-        submenu.removeClass('navbar-dark');
-      }
-    });
+    // Fluid.utils.listenScroll(function() {
+    //   navbar[navbar.offset().top > 50 ? 'addClass' : 'removeClass']('top-nav-collapse');
+    //   submenu[navbar.offset().top > 50 ? 'addClass' : 'removeClass']('dropdown-collapse');
+    //   if (navbar.offset().top > 0) {
+    //     navbar.removeClass('navbar-dark');
+    //     submenu.removeClass('navbar-dark');
+    //   } else {
+    //     navbar.addClass('navbar-dark');
+    //     submenu.removeClass('navbar-dark');
+    //   }
+    // });
     jQuery('#navbar-toggler-btn').on('click', function() {
       jQuery('.animated-icon').toggleClass('open');
       jQuery('#navbar').toggleClass('navbar-col-show');

@@ -1,7 +1,7 @@
-<nav id="navbar" class="navbar fixed-top  navbar-expand-lg navbar-dark scrolling-navbar">
+<nav id="navbar" class="navbar fixed-top  navbar-expand-lg scrolling-navbar top-nav-collapse">
   <div class="container">
     <a class="navbar-brand" href="<%= url_for() %>">
-      <strong><%= theme.navbar.blog_title || config.title %></strong>
+      <img src="/img/zust_ai.svg" style="height: 25px"/>
     </a>
 
     <button id="navbar-toggler-btn" class="navbar-toggler" type="button" data-toggle="collapse"
@@ -64,6 +64,10 @@
             </a>
           </li>
         <% } %>
+        <a 
+          class="btn btn-rounded"
+          style="background: rgb(240, 147, 43); color: white; font-weight: bold;"
+          href="https://zust.ai/login" target="_blank">Try the app</a>
       </ul>
     </div>
   </div>

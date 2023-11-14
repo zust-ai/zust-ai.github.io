@@ -78,7 +78,7 @@ meta_generator: true
 ## Hexo uses Moment.js to parse and display date
 ## You can customize the date format as defined in
 ## http://momentjs.com/docs/#/displaying/format/
-date_format: YYYY-MM-DD
+date_format: "LL"
 time_format: HH:mm:ss
 ## updated_option supports 'mtime', 'date', 'empty'
 updated_option: 'mtime'
@@ -103,3 +103,6 @@ theme: fluid
 ## Docs: https://hexo.io/docs/one-command-deployment
 deploy:
   type: ''
+
+authors:
+  - {id: "saquib", name: "Saquib Alam", linkedin: "saquiboye/", twitter: "saquiboye", thumbnail: "https://pbs.twimg.com/profile_images/1719376316200587264/dXfTm55k_400x400.jpg"}
