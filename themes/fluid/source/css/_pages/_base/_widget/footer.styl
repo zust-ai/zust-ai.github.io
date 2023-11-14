@@ -1,65 +1,53 @@
-.footer-inner
-  padding 3rem 0 1rem 0
-  text-align center
+.zust-footer
+  width: 100%
+  background-color: #000000
+  margin-top: 50px
+  padding: 50px 10vw
+  text-align: center
+  font-size: 14px
+  display: flex
+  flex-direction: column
+  color: white
+  border-bottom: 1px solid rgb(23, 23, 23)
 
-  & > div:not(:first-child)
-    margin .25rem 0
-    font-size .85rem
-
-  .statistics
-    display flex
-    flex-direction row
-    justify-content center
-
-    & > span
-      flex 1
-      margin 0 .25rem
-
-    & > *:nth-last-child(2):first-child
-      text-align right
-
-    & > *:nth-last-child(2):first-child ~ *
-      text-align left
-
-  .beian
-    display flex
-    flex-direction row
-    justify-content center
-
-    & > *
-      margin 0 .25rem
-
-  .beian-police
-    position relative
-    overflow hidden
-    display inline-flex
-    align-items center
-    justify-content left
-
-    img
-      margin-right 3px
-      width 1rem
-      height 1rem
-      margin-bottom .1rem
-
-  @media (max-width: 424px)
-    .statistics
-      flex-direction column
-
-      & > *:nth-last-child(2):first-child
-        text-align center
-
-      & > *:nth-last-child(2):first-child ~ *
-        text-align center
-
-    .beian
-      flex-direction column
-
-      .beian-police
-        justify-content center
-
-      & > *:nth-last-child(2):first-child
-        text-align center
-
-      & > *:nth-last-child(2):first-child ~ *
-        text-align center
+  &>div 
+    display: flex
+    &.company
+      flex: 1
+      margin-bottom: 120px
+    
+    &.links
+      flex: 1
+      display: grid
+      grid-template-columns: 1.5fr 1fr 1fr
+      gap: 20px
+      &>div
+        align-items: flex-start
+        display: flex
+        flex-direction: column
+      
+      h3 
+        text-decoration: underline
+        line-height: 3em
+        font-size: 1.6em
+        margin-bottom: 10px
+      
+      a
+        text-decoration: none
+        text-transform: none
+        color: rgb(187, 187, 187)
+        line-height: 2em
+      
+    
+  
+  @media screen and (max-width: 600px) 
+    flex-direction: column
+    h1
+      font-size: 4em
+    
+    &>div 
+      &.links
+        grid-template-columns: 1fr
+      
+    
+  

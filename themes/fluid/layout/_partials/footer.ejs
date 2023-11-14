@@ -1,18 +1,24 @@
-<div class="footer-inner">
-  <% if (theme.footer.content) { %>
-    <div class="footer-content">
-      <%- theme.footer.content %>
+<section class="zust-footer">
+  <div class="company">
+    <h1 style="color: white; font-family: 'Fredoka One', cursive; font-size: 3em;">zust.ai</h1>
+  </div>
+  <div class="links">
+    <div>
+      <h3>Sales and support</h3>
+      <span>hello@zust.ai</span>
+      <a href="https://zust.ai/affiliate">Affiliate program</a>
     </div>
-  <% } %>
-  <% if (theme.footer.statistics.enable) { %>
-    <%- partial('_partials/footer/statistics.ejs') %>
-  <% } %>
-  <% if(theme.footer.beian.enable) { %>
-    <!-- 备案信息 ICP for China -->
-    <%- partial('_partials/footer/beian.ejs') %>
-  <% } %>
-  <% if(theme.web_analytics.cnzz) { %>
-    <!-- cnzz Analytics Icon -->
-    <span id="cnzz_stat_icon_<%= theme.web_analytics.cnzz %>" style="display: none"></span>
-  <% } %>
-</div>
+    <div>
+      <h3>Product</h3>
+      <a href="https://zust.ai">AI Product photography</a>
+      <a href="https://photoshift.co">Photoshift</a>
+      <a href="https://fashion.zust.ai">Fashion AI</a>
+      <a href="https://qr.zust.ai">QR Code AI</a>
+    </div>
+    <div>
+      <h3>Support</h3>
+      <a href="https://zust.ai/terms">Terms</a>
+      <a href="https://zust.ai/privacy">Privacy</a>
+    </div>
+  </div>
+</section>
