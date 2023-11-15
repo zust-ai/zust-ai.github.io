@@ -47,7 +47,7 @@ page.banner_mask_alpha = theme.index.banner_mask_alpha
       </div>
       <% var excerpt = post.description || post.excerpt || (theme.index.auto_excerpt.enable && post.content) %>
       <div style="margin-top: 20px;">
-        <%- strip_html(excerpt).substring(0, 200).trim().replace(/\n/g, ' ') %>
+        <%- strip_html(excerpt).substring(0, 250).trim().replace(/\n/g, ' ') %>
       </div>
 
     </article>
