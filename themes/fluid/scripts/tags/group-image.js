@@ -39,7 +39,6 @@ const templates = {
     for (let i = 0; i < rows; i++) {
       imageArr.push(images.slice(i * ROW_SIZE, (i + 1) * ROW_SIZE));
     }
-
     return templates.getHTML(imageArr);
   },
 
@@ -53,22 +52,42 @@ const templates = {
     return images.map(image => {
       return `<div class="group-image-wrap">${image}</div>`;
     }).join('');
+  },
+  getAltFromImage(image) {
+    const alt = image.match(/alt="(.*)"/);
+    return alt && alt[1];
+  },
+  getCaptionHTML: (images, caption) => {
+    if (caption) {
+      return `<div class="group-image-annotation no-number">
+      <figcaption class="image-caption">${caption}</figcaption>
+      </div>`
+    }
+    const alts =  images.map(image => {
+      const alt = templates.getAltFromImage(image);
+      return `<figcaption class="image-caption">${alt}</figcaption>`;
+    }).join('');
+    return `<div class="group-image-annotation">${alts}</div>`
   }
 };
 
 const groupImage = (args, content) => {
   const total = parseInt(args[0], 10);
   const layout = args[1] && args[1].split('-').map((v) => parseInt(v, 10));
+  const caption = args[2];
 
   content = hexo.render.renderSync({ text: content, engine: 'markdown' });
 
   const images = content.match(/<img[\s\S]*?>/g);
 
-  return `<div class="group-image-container">${templates.dispatch(images, total, layout)}</div>`;
+  return `<div class="group-image-container">
+          ${templates.dispatch(images, total, layout)}
+          ${templates.getCaptionHTML(images, caption)}
+          </div>`;
 };
 
 /*
-  {% groupimage total n1-n2-n3-... %}
+  {% groupimage total n1-n2-n3-... 'group caption' %}
   ![](url)
   ![](url)
   ![](url)

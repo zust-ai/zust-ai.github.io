@@ -96,17 +96,39 @@
     margin 0 auto
     border-radius 3px
     background-color transparent
-    box-shadow 0 3px 9px 0 rgba(0, 0, 0, 0.15), 0 3px 9px 0 rgba(0, 0, 0, 0.15)
+    border solid 1px rgba(0,0,0,0.1)
 
 .group-image-row
   margin-bottom .5rem
   display flex
   justify-content center
+  gap 10px
+
+.group-image-annotation
+  display flex
+  gap 10px
+  counter-reset images
+  justify-content center
+  opacity 0.6
+  &.no-number
+    counter-reset unset
+    figcaption::before
+      content: ""
+
+  figcaption
+    margin-top 0 !important
+
+  figcaption::before
+    counter-increment: images
+    content: counter(images)". "
+
+
 
 .group-image-wrap
   flex 1
   display flex
   justify-content center
+  gap 10px
 
   &:not(:last-child)
     margin-right .25rem
