@@ -23,7 +23,7 @@ While each holds its significance, the first term has a bit more weightage. So, 
 ![3D animated, cinematic, low-angle shot, Simba standing proudly on top of Pride Rock, illuminated by the warm glow of the setting sun --ar 16:9](/images/prompt-suggestion/pixar-simba.webp)
 
 ## Exploring Mediums
-"medium" encompasses a broad spectrum, ranging from the classic strokes of oil painting to the lens-captured moments of photography and the illustrative wonders. This versatility provides prompters with a canvas of possibilities, allowing them to experiment and mold their visions with varied artistic mediums. In the image below, I replaced the medium in previous prompt to "oil painting". Study the diffrences.
+"medium" encompasses a broad spectrum, ranging from the classic strokes of oil painting to the lens-captured moments of photography and the illustrative wonders. This versatility provides prompters with a canvas of possibilities, allowing them to experiment and mold their visions with varied artistic mediums. In the image below, I replaced the medium in previous prompt to "oil painting". Study the differences.
 
 ![Oil painting, cinematic, low-angle shot, Simba standing proudly on top of Pride Rock, illuminated by the warm glow of the setting sun --ar 16:9](/images/prompt-suggestion/oil-simba.webp)
 
