@@ -2,7 +2,7 @@
 title: How to Master Product Lighting for Photographers
 author: saquib
 index_img: /images/how-to-master-product-lighting-for-photographers/title.webp
-description: Mastering the Art of Product Photography Lighting.
+description: Master product photography with essential equipment & techniques or opt for zust.ai's AI for effortless, high-quality images. Boost sales now!
 
 date: 12/10/2023
 ---
