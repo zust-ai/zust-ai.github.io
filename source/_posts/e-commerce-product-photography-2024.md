@@ -2,7 +2,7 @@
 title: Product Photography - elevating E-commerce in 2024
 author: saquib
 index_img: /images/e-commerce-product-photography-2024/elevate-e-commerce-photography.webp
-description: Elevate E-commerce with AI Photography | Zust.ai | Boost Sales | High-quality product images in 2024 | SEO Optimized Photography | Transforming Online Shopping
+description: Learn how to elevate your e-commerce listings with professional product photography. Tips, tools, and techniques for stunning visuals!
 
 date: 12/12/2023
 ---
