@@ -4,9 +4,13 @@
       <div class="post-meta mr-2">
         <% var author = config.authors.find(function (author) { return author.id === page.author }) %>
         <% console.log(author?.name) %>
-        <img class="img-thumbnail" style="padding: 0; border-radius: 50%; height: 50px;" src="<%= url_for(author?.thumbnail || theme.post.meta.author.thumbnail || config.author_avatar) %>" class="author-avatar">
+        <a href="https://twitter.com/<%=author?.twitter%>">
+          <img class="img-thumbnail" style="padding: 0; border-radius: 50%; height: 50px;" src="<%= url_for(author?.thumbnail || theme.post.meta.author.thumbnail || config.author_avatar) %>" class="author-avatar">
+        </a>
         <div style="display: flex; flex-direction: column;">
-          <span><%- author?.name || page.author || config.author %></span>
+          <a href="https://twitter.com/<%=author?.twitter%>">
+            <span><%- author?.name || page.author || config.author %></span>
+          </a>
           <div style="display: flex;">
             <% if (theme.post.meta.date.enable) { %>
               <span style="font-size: 0.7em;">
