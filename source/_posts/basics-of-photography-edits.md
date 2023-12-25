@@ -1,5 +1,5 @@
 ---
-title: Behind the Lens: Understanding the Basics of Photography Edits
+title: Behind the Lens- Understanding the Basics of Photography Edits
 author: saquib
 index_img: /images/basics-of-photography-edits/basics-of-photography-edits.webp
 description: Transform your photography with key editing techniques - exposure adjustments, cropping, sharpening, and more! Perfect for beginners seeking to enhance their skills.

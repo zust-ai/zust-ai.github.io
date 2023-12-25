@@ -1,5 +1,5 @@
 ---
-title: The Art of Color Grading: Elevating Your Photography Edits
+title: The Art of Color Grading- Elevating Your Photography Edits
 author: saquib
 index_img: /images/art-of-color-grading/art-of-color-grading.webp
 description: Discover the art of color grading in photography edits! Uncover tips, tools, and mastering the art to transform your images. Explore now!
