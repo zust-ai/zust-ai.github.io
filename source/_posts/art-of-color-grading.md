@@ -1,4 +1,3 @@
-
 ---
 title: The Art of Color Grading: Elevating Your Photography Edits
 author: saquib

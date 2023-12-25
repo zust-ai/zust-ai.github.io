@@ -1,4 +1,3 @@
-
 ---
 title: Behind the Lens: Understanding the Basics of Photography Edits
 author: saquib
