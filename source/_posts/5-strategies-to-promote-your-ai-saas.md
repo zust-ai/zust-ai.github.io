@@ -28,7 +28,7 @@ Social media advertising is a powerful strategy for promoting AI SaaS products d
 
 Listing your AI SaaS product on dedicated AI tool listing websites can significantly increase visibility and credibility. These platforms are frequented by businesses and individuals searching for AI solutions, making them an ideal place to showcase your product. Websites such as G2, Capterra, [TheInsaneApp](https://www.theinsaneapp.com/) and Product Hunt are popular choices for AI SaaS product listings. By leveraging these platforms, you can tap into a targeted audience and benefit from the reviews, ratings, and comparisons that users frequently consult when making purchasing decisions. This can ultimately lead to greater exposure and trust in your AI SaaS product.
 
-Make sure to publish an article about your tool like we did for three of our tools with amazing people at TheInsaneApp - [Photoshift.co](https://www.theinsaneapp.com/tools/photoshift/), [zust.ai](https://www.theinsaneapp.com/tools/zust-ai/) and [qr.zust.ai](https://www.theinsaneapp.com/tools/zust-qr/)
+Make sure to publish an article about your tool like we did for three of our tools with amazing people at TheInsaneApp - [Photoshift.co](https://www.theinsaneapp.com/tools/photoshift/), [zust.ai](https://www.theinsaneapp.com/tools/zust-ai/) and [qr.zust.ai](https://www.theinsaneapp.com/tools/zust-qr/).
 
 ## Conclusion
 
